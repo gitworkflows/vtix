@@ -22,7 +22,9 @@
     "cp-snapshot": "node bin/cp-snapshot.js",
     "generate-schema": "typescript-json-schema ./typings/config.d.ts rawConfig -o ./app/config/schema.json --required"
   },
-  "node": "18",
+  "engines": {
+    "node": ">=18.0.0 <20.0.0",
+   }
   "license": "MIT",
   "author": {
     "name": "ZEIT, Inc.",
